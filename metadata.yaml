@@ -1,0 +1,19 @@
+name: astrbot_plugin_status
+display_name: 运行状态
+short_desc: /status 查询 bot 运行状态与群限制（公开概览 + 管理员私聊明细，浅色仪表盘图）
+desc: >-
+  手动查询 bot 运行状态，不轮询、不推送、不改任何策略。
+
+  公开概览：连接状态、运行时长、已加入群数、已知禁言与恢复等待计数；
+  群内另附当前群模式与 QQ 限制情况。管理员私聊可见群列表、单群详情、
+  禁言记录、插件列表与运行详情（含数据来源时间与采集覆盖情况）。
+
+  数据来源限定为 gatekeeper 的只读快照、框架本地状态与本进程指标。
+  群列表缓存 15 分钟，优先复用 gatekeeper 最近一次完整结果，冷缓存时
+  最多向 QQ 适配器请求一次，失败后 60 秒内不重复补拉。
+
+  状态结果以浅色仪表盘图片输出；渲染失败时用同一视图输出等权限文字。
+version: 0.1.0
+author: "leekooyo"
+astrbot_version: ">=4.28.2"
+repo: https://github.com/leekooyo/astrbot_plugin_status

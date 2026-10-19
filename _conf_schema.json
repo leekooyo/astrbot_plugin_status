@@ -1,0 +1,8 @@
+﻿{
+  "target_platform_id": {
+    "description": "目标 QQ 账号 ID（平台配置中的 id）",
+    "type": "string",
+    "default": "",
+    "hint": "仅在同时连接多个 aiocqhttp 账号时需要填写；只有一个账号时留空即可自动使用。"
+  }
+}
