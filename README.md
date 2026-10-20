@@ -2,6 +2,10 @@
 
 `/status` 手动查询 bot 运行状态。只读、不轮询、不推送、不改任何策略。
 
+## 安装与维护
+
+本插件由 [leekooyo](https://github.com/leekooyo) 维护。在 AstrBot 中选择「通过仓库地址安装」，填写 `https://github.com/leekooyo/astrbot_plugin_status`。升级前请备份 AstrBot 的插件配置；需要排查或改进时，可在本仓库提交 Issue。
+
 ## 命令
 
 | 命令 | 可使用者 | 内容 |
